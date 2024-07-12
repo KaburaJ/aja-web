@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>AJA Pose</title>
+    <meta name="description" content="Free bootstrap template Atlas" />
+    <link rel="icon" href="img/aja.png" sizes="32x32" type="image/png" />
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css" />
+  </head>
+
+  <body>
+    <!-- banner -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="banner"
+      style="background-image: url(img/banner-bk.jpg)"
+    >
+      <div class="container text-center text-md-left">
+        <header>
+          <div class="row justify-content-between">
+            <div class="col-2">
+              <img src="img/aja.png" alt="logo" />
+            </div>
+            
+            <div class="col-6 align-self-center text-right">
+              <a href="https://pypi.org/project/aja-pose/" class="text-white lead">Get Started</a>
+            </div>
+          </div>
+        </header>
+        <h1
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="display-3 text-white font-weight-bold my-5"
+        >
+          Estimating Animal Poses<br />
+          So you Don't have to
+        </h1>
+        
+        <p
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="lead text-white my-4"
+        >
+          Inspired by the ICME 2024 Grand Challenge
+          <br />
+          on Multi-Modal Video Reasoning and Analyzing Competition (MMVRAC)
+        </p>
+        <div class="col-6 align-self-center text-left">
+            <a href="https://pypi.org/project/aja-pose/" class="text-green lead" style="color: #00FFAE;margin-left: -15px;">Poster Presentation</a>
+          </div>
+        
+      </div>
+      
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+      <h2 class="text-center font-weight-bold my-5">
+        Notable Features Include
+      </h2>
+      <div class="row">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+        >
+          <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto" />
+          <h4>93.07%</h4>
+          <p>AJA-Pose Model Accuracy on the Validation Set</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+        >
+          <img
+            src="img/smart-protect-2.jpg"
+            alt="Phishing Detect"
+            class="mx-auto"
+          />
+          <h4>850</h4>
+          <p>Species for which the model is able to accurately produce poses</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+          style="margin-top: 8%;"
+        >
+          <img src="img/qr.PNG" alt="Smart Scan" class="mx-auto" style="object-fit: contain; margin-bottom: 10%;"/>
+          <h4>An easy-to-use Package</h4>
+          <p>Built on PyPI which is accessible anytime, anywhere</p>
+        </div>
+      </div>
+    </div>
+    <!-- feature (skew background) -->
+    <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Take a look inside</h2>
+                    <p class="my-4">Te iisque labitur eos, nec sale argumentum scribentur no,
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem deserunt deterruisset no.</p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- feature (green background) -->
+    <div id="featureCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-color: white;">
+          <div class="jumbotron jumbotron-fluid feature" id="feature-last" style="background-color: #E9ECEF;">
+            <div class="container">
+              <div class="row justify-content-between text-center text-md-left">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 flex-md-last"
+                >
+                  <h2 class="font-weight-bold">Why?</h2>
+                  <p class="my-4">
+                    Computer vision allows for non-intrusive monitoring of
+                    animal behavior without the disruptions and potential harm
+                    caused by traditional methods like GPS trackers.
+                    <br /><br>Consequently, Animal pose estimation focuses on joint
+                    localisation requiring a robust model architecture due to
+                    the diverse and intricate skeletal structures of animals.
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 align-self-center flex-md-first"
+                >
+                  <img
+                    src="img/why.png"
+                    alt="Why?"
+                    class="mx-auto d-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron jumbotron-fluid feature">
+            <div class="container">
+              <div class="row justify-content-between text-center text-md-left">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 flex-md-last"
+                >
+                  <h2 class="font-weight-bold">Methodology</h2>
+                  <p class="my-4">
+                    VHR-BirdPose model, initially used for birds, was trained on
+                    the Animal Kingdom dataset, which includes 33,000 frames of
+                    over 850 species. VHR uses HRNet and attention branch to process input images
+                    for spatial and contextual feature extraction.
+                    <br /><br>
+                    Model performance was evaluated using Percentage of Correct
+                    Keypoints (PCK)@0.05.
+                    <br /><br>
+                    The loss function used was Mean Squared Error (MSE) between
+                    predicted and ground truth heatmaps.
+                    <br />
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 align-self-center flex-md-first"
+                >
+                  <img
+                    src="img/method.png"
+                    alt="Methodology"
+                    class="mx-auto d-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron jumbotron-fluid feature">
+            <div class="container">
+              <div class="row justify-content-between text-center text-md-left">
+                <div
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 flex-md-last"
+                >
+                  <h2 class="font-weight-bold">Results</h2>
+                  <p class="my-4">
+                    Comparing our model performance trained on all animals and
+                    evaluating the performance of birds against when trained on birds as of VHR-BirdPose alone, we see that our model performs better.
+                    <br /><br>
+                    This indicates that the model generalises better given that
+                    birds in the dataset share similar attributes with other
+                    animals, as they are all vertebrates.
+                  </p>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="col-md-6 align-self-center flex-md-first"
+                >
+                  <img
+                    src="img/results1.png"
+                    alt="Results"
+                    class="mx-auto d-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <div class="jumbotron jumbotron-fluid feature">
+              <div class="container">
+                <div class="row justify-content-between text-center text-md-left">
+                  <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    class="col-md-6 flex-md-last"
+                  >
+                    <h2 class="font-weight-bold">Discussion and Conclusion</h2>
+                    <p class="my-4">
+                        The framework simplifies distribution and installation, fostering community contributions and continuous improvement.                        
+                      <br /><br>
+                      The model struggled with frames containing multiple animals, increasing the likelihood of errors in joint fitting.
+                      <br /><br>
+                      A top down approach was shown to be useful for estimating pose in uncontrolled, cluttered images, as it fixes the scale and reduces the (x, y) search region to an enlarged area around the detection window.
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    class="col-md-6 align-self-center flex-md-first"
+                  >
+                    <img
+                      src="img/discussion.png"
+                      alt="Discussion and Conclusion"
+                      class="mx-auto d-block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="jumbotron jumbotron-fluid feature">
+              <div class="container">
+                <div class="row justify-content-between text-center text-md-left">
+                  <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    class="col-md-6 flex-md-last"
+                  >
+                    <h2 class="font-weight-bold">Future Work</h2>
+                    <p class="my-4">
+                        We propose using object detection to dynamically localise regions of interest, reducing noise and improving robustness for better general performance.
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    class="col-md-6 align-self-center flex-md-first"
+                  >
+                    <img
+                      src="img/future.png"
+                      alt="Future Work"
+                      class="mx-auto d-block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#featureCarousel"
+        role="button"
+        data-slide="prev"
+        style="color: #00FFAE;"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#featureCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- price table -->
+    <div class="container my-5 py-2" id="price-table">
+      <h2 class="text-center font-weight-bold d-block mb-3">Our Team</h2>
+      <div class="row">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+        <h4 class="my-4">AUSTIN KABURA</h4>
+        <img
+                    src="img/AUSTIN.jpeg"
+                    alt="Future Work"
+                    class="mx-auto d-block"
+                    style="border-radius: 50%; width: 600px;"
+                  />
+                  <a href="https://github.com/kaburia" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/austin-kaburia/" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+        <h4 class="my-4">JOAN KABURA</h4>
+        <img
+                    src="img/JOAN.jpeg"
+                    alt="Future Work"
+                    class="mx-auto d-block"
+                    style="border-radius: 50%;"
+                  />
+                  <a href="https://github.com/KaburaJ" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/joan-kabura/" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+        <h4 class="my-4">ANTONY GITAU</h4>
+        <img
+                    src="img/GITAU.jpeg"
+                    alt="Future Work"
+                    class="mx-auto d-block"
+                    style="border-radius: 50%;"
+                  />
+                  <a href="https://github.com/Antony-gitau" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/antony-m-gitau/" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+         
+        </div>
+        <div
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        class="col-md-4 text-center py-4 mt-5"
+      >
+      <h4 class="my-4">PROF. CIIRA WA MAINA</h4>
+      <img
+                  src="img/CIIRA.jpeg"
+                  alt="Future Work"
+                  class="mx-auto d-block"
+                  style="border-radius: 50%;"
+                />
+                <a href="https://github.com/DeKUT-DSAIL" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/ciira-maina-b0b10a26/" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+       
+      </div>
+      </div>
+    </div>
+    <!-- client -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="margin: 0 auto">
+            <div class="row justify-content-around">
+                <div class="col-sm-4 col-md-2 py-2 align-self-center image-container">
+                    <img src="img/dsa-r.png" class="mx-auto d-block" />
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center image-container">
+                    <img src="img/ps'.jpeg" class="mx-auto d-block" />
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center image-container">
+                    <img src="img/icme-r.png" class="mx-auto d-block" style="object-position: center; object-fit: contain;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="contact"
+      style="background-image: url(img/contact-bk.jpg)"
+    >
+      <div class="container my-5">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white">
+            <h2 class="font-weight-bold">Contact Us</h2>
+            <p class="my-4">
+                Interested in this project? Reach out to us with your comments, queries or suggestions.
+                <br></br>
+                We look forward to hearing from you
+            </p>
+            <ul class="list-unstyled">
+              <li>Email : <br>kibaara.austin20@students.dkut.ac.ke |<br> kabura.joan20@students.dkut.ac.ke |<br> antony.gitau@students.ku.ac.ke | <br>ciira.maina@dkut.ac.ke</li>
+              <br>
+              <li>Phone : +254704883642</li>
+              <li>Address : Private Bag - 10143, Dedan Kimathi, Along Nyeri - Mweiga road</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="Email">Your Email</label>
+                  <input type="email" class="form-control" id="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <p>Messaging form feature coming soon!</p>
+              <button
+                type="submit"
+                class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-md-6 text-white align-self-center text-center text-md-left my-2"
+          >
+            Copyright © 2024 Kabura, AJA.
+          </div>
+          <div
+            class="col-md-6 align-self-center text-center text-md-right my-2"
+            id="social-media"
+          >
+            <a href="https://github.com/kaburia/AJA-pose.git" class="d-inline-block text-center ml-2" id="git">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <!-- <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-medium" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
